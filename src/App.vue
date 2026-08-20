@@ -1,7 +1,11 @@
 <script setup lang="ts">
-import HelloWorld from './components/HelloWorld.vue'
+import DefaultLayout from './layouts/DefaultLayout.vue'
+import GlobalSnackbar from './components/common/GlobalSnackbar.vue'
 </script>
 
 <template>
-  <HelloWorld />
+  <GlobalSnackbar />
+  <DefaultLayout>
+    <router-view />
+  </DefaultLayout>
 </template>
